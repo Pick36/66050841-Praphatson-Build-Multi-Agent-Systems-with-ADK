@@ -84,6 +84,18 @@ Responsible for:
 ---
 
 ## 📂 Project Structure
+adk_multiagent_systems/
+│
+├ workflow_agents/
+│   ├ agent.py
+│   ├ __init__.py
+│
+├ historical_reports/
+│   ├ generated_reports.txt
+│
+├ callback_logging.py
+├ requirements.txt
+├ README.md
 
 ---
 
