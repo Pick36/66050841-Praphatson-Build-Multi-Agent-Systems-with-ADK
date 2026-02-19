@@ -81,26 +81,6 @@ LLM Model	Gemini
 Cloud	Google Cloud Platform
 Logging	Google Cloud Logging
 Environment	CloudShell / Local Python
-###  Project Structure
-project_root/
-│
-├ callback_logging.py
-├ requirements.txt
-│
-├ historical_reports/
-│ └ Queen_Elizabeth_I.txt
-│
-├ parent_and_subagents/
-│ ├ agent.py
-│ ├ __init__.py
-│ └ .env
-│
-├ workflow_agents/
-│ ├ agent.py
-│ ├ __init__.py
-│ └ .env
-│
-└ README.md
 
 ###  Installation
 #### 1️ Clone Repository
