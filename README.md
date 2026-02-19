@@ -151,7 +151,7 @@ Iterative Reasoning Loops
 
 Prompt-Driven Task Execution
 
-##🧪 Example Query
+## 🧪 Example Query
 Tell me about a foreign queen and her historical impact.
 
 
