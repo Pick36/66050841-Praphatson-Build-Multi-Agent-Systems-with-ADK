@@ -1,162 +1,212 @@
-# 📜 Historical Court Multi-Agent System (ADK)
+🧠 Multi-Agent Historical Intelligence System
+AI Multi-Agent System for Foreign Monarchy Historical Analysis
+📌 Project Overview
 
-## 🧠 Overview
-This project is a Multi-Agent Historical Analysis System built using Google Agent Development Kit (ADK).  
-The system simulates a historical court where multiple AI agents investigate historical figures or events and produce a balanced final report.
+This project presents a Multi-Agent Artificial Intelligence System designed to analyze and generate historical knowledge related to foreign monarchies and global historical events.
 
-The project is designed to demonstrate multi-agent collaboration using tools and cloud-based AI services.
+The system applies modern AI agent orchestration concepts using a Parent Agent + Sub-Agent Architecture.
+Each agent is responsible for specific cognitive tasks such as query understanding, historical data retrieval, and narrative generation.
 
-Source code is hosted on GitHub and designed for educational demonstration.
+This project demonstrates real-world applications of:
 
----
+Multi-Agent Systems (MAS)
 
-## 🎯 Project Objective
-The objective of this project is to:
+Distributed AI Reasoning
 
-- Demonstrate multi-agent workflow design  
-- Perform historical research from multiple perspectives  
-- Automatically validate evidence balance  
-- Generate neutral historical reports  
+Tool-Augmented LLM Agents
 
----
+Historical Knowledge Synthesis
 
-## 🏛️ System Concept
-The system simulates a historical court process:
+🎯 Objectives
 
-### 1️⃣ Investigation Phase
-- Supporter Agent → Finds achievements and legacy  
-- Critic Agent → Finds controversies and failures  
+Develop a scalable AI Multi-Agent architecture
 
-### 2️⃣ Trial Phase (Loop Validation)
-- Judge Agent checks evidence balance  
-- If data is insufficient → Investigation repeats  
+Demonstrate agent collaboration and workflow orchestration
 
-### 3️⃣ Final Verdict Phase
-- Generates neutral historical report  
-- Saves report into file system  
+Apply AI to historical domain knowledge
 
----
+Build production-style AI system structure
 
-## ⚙️ System Architecture
+Deploy using Google Cloud compatible environment
 
----
+🏗 System Architecture
+User Query
+    ↓
+Parent Agent (Coordinator / Planner)
+    ↓
+Sub Agent 1 — Historical Research Agent
+    ↓
+Sub Agent 2 — Report Generator Agent
+    ↓
+Final Historical Narrative Output
 
-## 🤖 Agents Description
+🧩 Agent Roles
+🧭 Parent Agent
 
-### 🟢 Admirer Agent
-Responsible for researching:
-- Achievements  
-- Contributions  
-- Positive legacy  
-
----
-
-### 🔴 Critic Agent
-Responsible for researching:
-- Controversies  
-- Criticism  
-- Historical failures  
-
----
-
-### ⚖️ Judge Agent
 Responsible for:
-- Checking balance between positive and negative data  
-- Controlling loop exit condition  
 
----
+Query interpretation
 
-### 📝 Verdict Writer Agent
+Task decomposition
+
+Agent orchestration
+
+Iteration control
+
+📚 Historical Research Sub-Agent
+
 Responsible for:
-- Creating neutral historical analysis  
-- Generating final report  
-- Saving report into `/historical_reports`  
 
----
+Searching historical knowledge
 
-## 📦 Technologies Used
-- Python 3.12  
-- Google ADK  
-- LangChain Community Tools  
-- Wikipedia API  
-- Google Cloud Logging  
+Extracting key facts
 
----
+Structuring historical timeline
 
-## 📂 Project Structure
+📝 Report Generator Sub-Agent
 
----
+Responsible for:
 
-## 🚀 Installation
+Transforming data into readable narrative
 
-### 1️⃣ Clone Repository
+Generating structured historical reports
 
----
+Ensuring language quality
 
-### 2️⃣ Install Dependencies
+⚙ Technology Stack
+Category	Technology
+Language	Python 3.12
+AI Framework	Google ADK
+LLM Model	Gemini
+Cloud	Google Cloud Platform
+Logging	Google Cloud Logging
+Environment	CloudShell / Local Python
+📂 Project Structure
+project_root/
+│
+├ callback_logging.py
+├ requirements.txt
+│
+├ historical_reports/
+│ └ Queen_Elizabeth_I.txt
+│
+├ parent_and_subagents/
+│ ├ agent.py
+│ ├ __init__.py
+│ └ .env
+│
+├ workflow_agents/
+│ ├ agent.py
+│ ├ __init__.py
+│ └ .env
+│
+└ README.md
 
----
+🚀 Installation
+1️⃣ Clone Repository
+git clone <your-repo-url>
+cd your-project
 
-### 3️⃣ Setup Environment Variables
-Create `.env` file
+2️⃣ Install Dependencies
+pip install -r requirements.txt
 
+3️⃣ Setup Environment Variables
 
----
+Create .env file inside agent folders:
 
-## ▶️ Run Project
+GOOGLE_API_KEY=your_key_here
+PROJECT_ID=your_project_id
 
----
+▶ Running the System
 
-## 💬 Example Usage
+Run Parent Agent:
 
-User Input Example:
-
-System Output:
-- Positive historical evidence  
-- Negative historical evidence  
-- Balanced historical analysis report  
-
----
-
-## 📊 Output
-Generated reports will be saved inside:
+python parent_and_subagents/agent.py
 
 
-Example Output:
-Queen Elizabeth I.txt
+Run Workflow Agent:
 
----
+python workflow_agents/agent.py
 
-## 🧪 Key Features
-- Multi-Agent Collaboration  
-- Parallel Historical Research  
-- Loop-Based Evidence Validation  
-- Automatic Report Generation  
-- Cloud Logging Integration  
+🔁 Agent Iteration Control
 
----
+The system uses controlled agent iteration:
 
-## 📚 Learning Outcomes
-This project demonstrates:
+max_iterations = 3
 
-- Multi-agent workflow architecture  
-- Loop control in agent systems  
-- Tool-based knowledge retrieval  
-- State-based data sharing between agents  
 
----
+This prevents infinite agent loops while maintaining reasoning depth.
 
-## ⚠️ Disclaimer
-This system is designed for educational purposes.  
-Historical data is retrieved from public knowledge sources and may require verification.
+📊 Key AI Concepts Demonstrated
 
----
+Multi-Agent Coordination
 
-## 👨‍💻 Author
-Student Project — Industrial Physics and IoT Engineering  
+Tool-Augmented LLM Reasoning
 
----
+Hierarchical Agent Control
 
-## 📄 License
-Educational Use Only
+AI Workflow Orchestration
+
+Iterative Reasoning Loops
+
+Prompt-Driven Task Execution
+
+🧪 Example Query
+Tell me about a foreign queen and her historical impact.
+
+
+Output:
+
+Historical background
+
+Timeline events
+
+Political impact
+
+Historical legacy
+
+📈 Future Improvements
+
+Add Vector Database Memory
+
+Add Retrieval-Augmented Generation (RAG)
+
+Add Web Search Tool Integration
+
+Deploy as API Service
+
+Add Frontend Dashboard
+
+🔬 Research Value
+
+This project demonstrates practical implementation of:
+
+Distributed AI Systems
+
+Autonomous Agent Collaboration
+
+Knowledge-Oriented LLM Systems
+
+AI Historical Reasoning Models
+
+👨‍💻 Author
+
+Industrial Physics & IoT Engineering Student
+AI Systems & Multi-Agent Architecture Research Focus
+
+📜 License
+
+Educational / Research Use
+
+⭐ Academic Contribution
+
+This project can be extended into:
+
+AI Senior Project
+
+Multi-Agent Research Paper
+
+Applied AI Thesis
+
+Intelligent Knowledge System Prototype
 
