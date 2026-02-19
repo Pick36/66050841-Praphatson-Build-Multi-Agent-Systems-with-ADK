@@ -13,7 +13,7 @@ Multi-Agent Systems (MAS)
 
 Distributed AI Reasoning
 
-Tool-Augmented LLM Agents
+Tool-Augmented LLM Agents 
 
 Historical Knowledge Synthesis
 
