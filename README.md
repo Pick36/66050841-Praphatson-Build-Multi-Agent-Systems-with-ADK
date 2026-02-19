@@ -1,6 +1,6 @@
-# 🧠 Multi-Agent Historical Intelligence System
+#  Multi-Agent Historical Intelligence System
 AI Multi-Agent System for Foreign Monarchy Historical Analysis
-## 📌 Project Overview
+##  Project Overview
 
 This project presents a Multi-Agent Artificial Intelligence System designed to analyze and generate historical knowledge related to foreign monarchies and global historical events.
 
@@ -17,7 +17,7 @@ Tool-Augmented LLM Agents
 
 Historical Knowledge Synthesis
 
-### 🎯 Objectives
+###  Objectives
 
 Develop a scalable AI Multi-Agent architecture
 
@@ -29,7 +29,7 @@ Build production-style AI system structure
 
 Deploy using Google Cloud compatible environment
 
-### 🏗 System Architecture
+###  System Architecture
 User Query
     ↓
 Parent Agent (Coordinator / Planner)
@@ -40,8 +40,8 @@ Sub Agent 2 — Report Generator Agent
     ↓
 Final Historical Narrative Output
 
-### 🧩 Agent Roles
-### 🧭 Parent Agent
+###  Agent Roles
+###  Parent Agent
 
 Responsible for:
 
@@ -53,7 +53,7 @@ Agent orchestration
 
 Iteration control
 
-### 📚 Historical Research Sub-Agent
+###  Historical Research Sub-Agent
 
 Responsible for:
 
@@ -63,7 +63,7 @@ Extracting key facts
 
 Structuring historical timeline
 
-### 📝 Report Generator Sub-Agent
+###  Report Generator Sub-Agent
 
 Responsible for:
 
@@ -81,7 +81,7 @@ LLM Model	Gemini
 Cloud	Google Cloud Platform
 Logging	Google Cloud Logging
 Environment	CloudShell / Local Python
-### 📂 Project Structure
+###  Project Structure
 project_root/
 │
 ├ callback_logging.py
@@ -102,15 +102,15 @@ project_root/
 │
 └ README.md
 
-🚀 Installation
-1️⃣ Clone Repository
+###  Installation
+#### 1️ Clone Repository
 git clone <your-repo-url>
 cd your-project
 
-### 2️⃣ Install Dependencies
+#### 2️ Install Dependencies
 pip install -r requirements.txt
 
-### 3️⃣ Setup Environment Variables
+#### 3️ Setup Environment Variables
 
 Create .env file inside agent folders:
 
@@ -128,7 +128,7 @@ Run Workflow Agent:
 
 python workflow_agents/agent.py
 
-### 🔁 Agent Iteration Control
+###  Agent Iteration Control
 
 The system uses controlled agent iteration:
 
@@ -137,7 +137,7 @@ max_iterations = 3
 
 This prevents infinite agent loops while maintaining reasoning depth.
 
-### 📊 Key AI Concepts Demonstrated
+###  Key AI Concepts Demonstrated
 
 Multi-Agent Coordination
 
@@ -151,7 +151,7 @@ Iterative Reasoning Loops
 
 Prompt-Driven Task Execution
 
-### 🧪 Example Query
+###  Example Query
 Tell me about a foreign queen and her historical impact.
 
 Output:
@@ -164,7 +164,7 @@ Political impact
 
 Historical legacy
 
-### 📈 Future Improvements
+###  Future Improvements
 
 Add Vector Database Memory
 
@@ -176,7 +176,7 @@ Deploy as API Service
 
 Add Frontend Dashboard
 
-### 🔬 Research Value
+###  Research Value
 
 This project demonstrates practical implementation of:
 
@@ -188,16 +188,16 @@ Knowledge-Oriented LLM Systems
 
 AI Historical Reasoning Models
 
-### 👨‍💻 Author
+###  Author
 
 Industrial Physics & IoT Engineering Student
 AI Systems & Multi-Agent Architecture Research Focus
 
-### 📜 License
+###  License
 
 Educational / Research Use
 
-### ⭐ Academic Contribution
+###  Academic Contribution
 
 This project can be extended into:
 
